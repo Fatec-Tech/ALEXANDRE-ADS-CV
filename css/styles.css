@@ -10922,23 +10922,45 @@ p.lead {
   }
 }
 .social-icons .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
-  border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    background: transparent;
+    color: black;
+
+    font-size: 45px;
+    text-decoration: none;
+    cursor: pointer;
 }
-.social-icons .social-icon:last-child {
-  margin-right: 0;
+
+.social-icons .social-icon i {
+    color: black;
+
+    background: radial-gradient(
+        circle 22px at var(--x, 50%) var(--y, 50%),
+        var(--cor1, red),
+        var(--cor2, yellow),
+        var(--cor3, blue),
+        transparent 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
 }
+
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+    background: transparent;
 }
+
+.social-icons .social-icon:hover i {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .dev-icons {
   font-size: 3rem;
@@ -10969,4 +10991,36 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+.social-icon {
+font-size: 45px;
+cursor: pointer;
+}
+
+.social-icon i {
+color: black;
+
+background:
+    radial-gradient(
+    circle 25px at var(--x, 50%) var(--y, 50%),
+    var(--cor1, #ff0000),
+    var(--cor2, #00ff00),
+    var(--cor3, #0000ff),
+    transparent 100%
+    );
+
+background-clip: text;
+-webkit-background-clip: text;
+
+transition: color 0.2s;
+}
+
+.social-icon:hover i {
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
+
+.fa-circle {
+    color: black;
 }
