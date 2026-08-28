@@ -10945,7 +10945,7 @@ p.lead {
         var(--cor1, red),
         var(--cor2, yellow),
         var(--cor3, blue),
-        transparent 100%
+        black 100%
     );
 
     background-clip: text;
@@ -10960,7 +10960,6 @@ p.lead {
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
-
 
 .dev-icons {
   font-size: 3rem;
@@ -11001,14 +11000,14 @@ cursor: pointer;
 .social-icon i {
 color: black;
 
-background:
-    radial-gradient(
-    circle 25px at var(--x, 50%) var(--y, 50%),
-    var(--cor1, #ff0000),
-    var(--cor2, #00ff00),
-    var(--cor3, #0000ff),
-    transparent 100%
-    );
+background: 
+  radial-gradient(
+    circle 22px at var(--x, 50%) var(--y, 50%),
+    var(--cor1) 0%,
+    var(--cor2) 35%,
+    var(--cor3) 60%,
+    black 85%
+);
 
 background-clip: text;
 -webkit-background-clip: text;
@@ -11024,3 +11023,4 @@ color: transparent;
 .fa-circle {
     color: black;
 }
+
